@@ -32,7 +32,7 @@ SOFTWARE.
 // See https://github.com/kroitor/ccxt/blob/master/CONTRIBUTING.md for details
 //-----------------------------------------------------------------------------
 
-namespace ccxt;
+namespace build\ccxt;
 
 class CCXTError            extends \Exception    {}
 class ExchangeError        extends CCXTError     {}
@@ -454,7 +454,7 @@ class Exchange {
                     $uppercaseMethod  = mb_strtoupper ($http_method);
                     $lowercaseMethod  = mb_strtolower ($http_method);
                     $camelcaseMethod  = Exchange::capitalize ($lowercaseMethod);
-                    $camelcaseSuffix  = implode (array_map ('\ccxt\Exchange::capitalize', $splitPath));
+                    $camelcaseSuffix  = implode (array_map ('\build\ccxt\Exchange::capitalize', $splitPath));
                     $lowercasePath    = array_map ('trim', array_map ('strtolower', $splitPath));
                     $underscoreSuffix = implode ('_', array_filter ($lowercasePath));
 
@@ -1118,7 +1118,7 @@ class _1broker extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class cryptocapital extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -2068,7 +2068,7 @@ class bit2c extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bitbay extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -2589,7 +2589,7 @@ class bitcoincoid extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bitfinex extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -2919,7 +2919,7 @@ class bitfinex extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bitflyer extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -3137,7 +3137,7 @@ class bitflyer extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bitlish extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -3419,7 +3419,7 @@ class bitlish extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bitmarket extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -3613,7 +3613,7 @@ class bitmarket extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bitmex extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -3879,7 +3879,7 @@ class bitmex extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bitso extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -4091,7 +4091,7 @@ class bitso extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bitstamp extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -4354,7 +4354,7 @@ class bitstamp extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bittrex extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -4690,7 +4690,7 @@ class bittrex extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class blinktrade extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -4868,7 +4868,7 @@ class blinktrade extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class bl3p extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -5057,7 +5057,7 @@ class bl3p extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class btcchina extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -5291,7 +5291,7 @@ class btcchina extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class btce extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -5553,7 +5553,7 @@ class btce extends Exchange {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class btcmarkets extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -6204,7 +6204,7 @@ class btcturk extends btctrader {
 }
 
 //------------------------------------------------------------------------------
-
+//bisa transfer
 class btcx extends Exchange {
 
     public function __construct ($options = array ()) {
@@ -13059,7 +13059,7 @@ class mercado extends Exchange {
 
 //------------------------------------------------------------------------------
 
-class okcoin extends Exchange {
+/*class okcoin extends Exchange {
 
     public function __construct ($options = array ()) {
         parent::__construct (array_merge(array (
@@ -13451,7 +13451,7 @@ class okex extends okcoin {
         ), $params));
     }
 }
-
+*/
 //------------------------------------------------------------------------------
 
 class paymium extends Exchange {

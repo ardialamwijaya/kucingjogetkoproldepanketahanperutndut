@@ -4,6 +4,21 @@ parameters:
 #    parameter_name: value
 
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+    ccxt.poloniex:
+        class: build\ccxt\poloniex
+
+    ccxt.btcmarkets:
+        class: build\ccxt\btcmarkets
+
+    ccxt.bitcoincoid:
+        class: build\ccxt\bitcoincoid
+
+    ccxt.coinspot:
+        class: build\ccxt\coinspot
+
+    ccxt.kraken:
+        class: build\ccxt\kraken
+
+    ccxt.bittrex:
+        class: build\ccxt\bittrex

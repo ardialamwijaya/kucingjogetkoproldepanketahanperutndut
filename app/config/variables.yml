@@ -1,0 +1,21 @@
+parameters:
+    arbitrage_currencies:
+        - "ETH/BTC"
+
+    exchange:
+        - "bitcoincoid"
+        - "bittrex"
+
+    scalping_properties:
+        bitcoincoid:
+            - "ETH/IDR"
+            - "ETC/IDR"
+            - "BCH/IDR"
+        coinspot:
+            - "LTC/AUD"
+            - "DOGE/AUD"
+
+    settings:
+        minimum_balance_transaction: 0.5
+        minimum_profit_margin: 0.05
+

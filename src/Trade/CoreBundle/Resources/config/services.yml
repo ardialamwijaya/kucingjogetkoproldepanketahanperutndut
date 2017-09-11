@@ -1,0 +1,4 @@
+services:
+    arbitrage.main:
+        class: Trade\CoreBundle\Services\Arbitrage\Main
+        arguments: ['@doctrine.orm.entity_manager']
